@@ -1,0 +1,260 @@
+/*FORMATAÇÕES GERAIS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+.btn.btn-primary {
+    background: var(--black);
+    border: none;
+    display: block;
+    transition: all 0.3s ease-in;
+    color: var(--green);
+}
+.btn.btn-primary:hover {
+    background-color: var(--yellow-dark);
+    transform: translateY(-5px);
+}
+:root {
+    --yellow: #f8c101;
+    --white: #fff;
+    --black: #212121;
+    --green: #25d366;
+    --yellow-dark: #c49900;
+    --purple: #7418c5;
+    --red: #fe1230;
+} 
+
+.whats-icon {
+    position: absolute;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+    position: fixed;
+    z-index: 1;
+}
+/*FORMATAÇÕES CABEÇALHO*/
+body {
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+header img {
+    height: 50px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;  
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+/*MAIN SECTION PRIMARIO*/
+.content-primary {
+    background-image: url(principal.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+}
+.conteudo {
+    color: rgb(255, 255, 255);
+    background-color: #505050;
+    opacity: 0.8;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 20px;
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    width: 35%;
+}
+.content-primary button {
+    margin-top: 10px;
+}
+/*MAIN SECTION SECOND*/
+.content-second a {
+    display: block;
+    color: #25d366;
+}
+.content-second {
+    margin: 20px 0;
+    background-color: var(--black);
+    padding: 20px;
+}
+.content-second {
+    color: var(--white);
+}
+.content-second i {
+    display: block;
+    font-size: 3rem;
+    color: white;
+}
+.content-terceiro {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.col.content {
+    justify-content: center;
+    align-content: center;
+    border-radius: 0 20px;
+    height: 100%;
+    margin-top: 3em;
+    padding: 40px 30px;
+}
+.content-terceiro h2 {
+    color: var(--red);
+}
+.content-quarto h2 {
+    color: var(--purple);
+}
+.content-terceiro img,
+.content-quarto img {
+    height: 20em;
+}
+.content-quarto {
+    margin: 20px 0;
+    background-color: var(--black);
+    padding: 20px;
+    color: white;
+    border: 1px solid #ffffff;
+}
+.cards {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    height: 41em;
+    margin: 0 10px;
+}
+.card li {
+    margin: 20px 0;
+}
+.card i {
+    font-size: 22px;
+    color: var(--green);
+}
+.check {
+    color: var(--green);
+    font-size: 22px;
+}
+.bi.bi-x-lg {
+    color: red;
+    font-size: 22px;
+}
+.price-No-discount {
+    display: block;
+}
+.title-planos,
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.forms {
+    display: block;
+    margin: 0 auto;
+}
+
+.forms h2 {
+    text-align:left;
+    color: #fff;
+    margin-top: 20px;
+}
+
+label {
+    color: #fff;
+    margin: 10px 0 0 0;
+}
+.dropdown {
+    margin-top: 10px;
+}
+.container-fluid {
+    background-color: var(--black);
+    margin-top: 20px;
+    
+}
+.dropdown-menu {
+    height: 175px;
+    overflow-y: scroll;
+}
+.container-fluid img {
+    height: 35em;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 970px) {
+    .content-terceiro img,
+.content-quarto img {
+    height: 20em;
+}
+.content-primary {
+
+    background-size: cover;
+}
+.content-second .col {
+    flex: auto;
+}
+.content-primary .conteudo {
+    width: 70%;
+}
+.content-terceiro img,
+.content-quarto img {
+    height: 15em;
+}
+.content-terceiro,
+.content-quarto {
+    padding: 10px;
+    display: block;
+}
+.content-primary button {
+    display: block;
+}
+.cards {
+    display: grid;
+    margin-bottom: 20px;
+}
+.card {
+     margin-bottom: 20px;
+     height: 660px;
+}
+.col.content {
+    margin: 1em 1.5em;
+    }
+
+    .forms h2 {
+        text-align: left;
+    }
+    .container-fluid img {
+        display: none;
+    }
+    .col .forms {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .col.image {
+        display: none;
+    }
+}
